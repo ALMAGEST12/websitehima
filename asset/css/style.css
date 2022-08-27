@@ -1,0 +1,113 @@
+#berita-1 {
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#selamat-datang {
+    top: 40%;
+}
+
+.berita {
+    position: absolute;
+    max-width: 350px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#logo-kabinet {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kotak-warna {
+    width: 15vw;
+    height: 15vw;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.foto img {
+    box-shadow: 6px 8px 23px rgba(80, 0, 250, 0.21);
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.badan div{
+    min-width: 300px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer > div > div{
+    width: 50%;
+}
+
+.vertical-line {
+    width: 10px;
+    height: auto;
+}
+
+.header {
+    max-height: 1000px;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+
+@media (max-width: 991.98px) {
+    #logo-kabinet {
+        position: static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(0, 0) !important;
+        margin-top: 36px;
+    }
+    #berita-1 {
+        top: 50%;
+        transform: translateX(0);
+    }
+
+    #selamat-datang {
+        top: 0%;
+    }
+
+    .berita {
+        position: static;
+    }
+    .header{
+        height: max-content !important;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    footer > div > div{
+        width: 100%;
+    }
+}
