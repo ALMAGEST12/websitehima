@@ -32,3 +32,25 @@ for (const ele of element) {
     
     ele.addEventListener('mousedown', mouseDownHandler);   
 }
+
+
+// Sticky for Navigation Bar
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky-nav");
+  } else {
+    header.classList.remove("sticky-nav");
+  }
+
+  if (window.pageYOffset > 100) {
+    document.getElementById("myHeader").style.height = "50px";
+  } else {
+    document.getElementById("myHeader").style.height = "90px";
+  }
+}
+
